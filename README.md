@@ -23,8 +23,8 @@ a simple config for sublime text 4
 
 
 ```
-## vs code window terminal fonts and color scheme
-# press ctrl + , to open settings
+# vs code window terminal fonts and color scheme
+## press ctrl + , to open settings
 ```
 {
     "$schema": "https://aka.ms/terminal-profiles-schema",
