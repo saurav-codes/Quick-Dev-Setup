@@ -1,4 +1,4 @@
-#📒sublime-settings
+# 📒sublime-settings
 a simple config for sublime text 4
 
 ```
