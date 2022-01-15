@@ -1,4 +1,4 @@
-# sublime-settings
+#📒sublime-settings
 a simple config for sublime text 4
 
 ```
@@ -23,7 +23,7 @@ a simple config for sublime text 4
 
 
 ```
-# window terminal fonts and color scheme
+# 👩‍💻window terminal fonts and color scheme
 ## press ctrl + , to open settings
 ```
 {
