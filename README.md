@@ -320,3 +320,39 @@ a simple config for sublime text 4
     ]
 }
 ```
+# Install Zsh Guide
+```
+https://www.tecmint.com/install-zsh-in-ubuntu/
+```
+# Oh-my-zsh theme
+```
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+# HomeBrew 
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+# CopyQ
+```
+https://linuxhint.com/install-copyq-ubuntu/
+```
+# Albert
+```
+https://albertlauncher.github.io/installing/
+```
+# OBS
+```
+sudo apt install obs-studio
+```
+# VLC
+```
+sudo apt install vlc
+```
+# Other Required Softwares
+```
+Chrome
+FireFox
+VS Code
+Sublime
+```
