@@ -356,3 +356,12 @@ FireFox
 VS Code
 Sublime
 ```
+# generate SSH Keys
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+```
+## add agent
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
