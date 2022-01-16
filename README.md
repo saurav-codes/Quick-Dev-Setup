@@ -377,4 +377,13 @@ https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on
 ```
 sudo apt install nodejs
 ```
+# Brightness config
+## Step up:
+```
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+```
 
+## Step down:
+```
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
+```
