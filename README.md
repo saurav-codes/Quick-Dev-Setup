@@ -324,7 +324,7 @@ a simple config for sublime text 4
 ```
 https://www.tecmint.com/install-zsh-in-ubuntu/
 ```
-# Oh-my-zsh theme
+# Oh-my-zsh theme 🎴
 ```
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -337,7 +337,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 ```
 https://linuxhint.com/install-copyq-ubuntu/
 ```
-# Albert
+# Albert 🔍
 ```
 https://albertlauncher.github.io/installing/
 ```
@@ -345,7 +345,7 @@ https://albertlauncher.github.io/installing/
 ```
 sudo apt install obs-studio
 ```
-# VLC
+# VLC 📽
 ```
 sudo apt install vlc
 ```
@@ -356,12 +356,16 @@ FireFox
 VS Code
 Sublime
 ```
-# generate SSH Keys
+# generate SSH Keys 🔐
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
-## add agent
+## add agent 🕵️
 ```
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
+```
+# 🎮 Steam
+```
+sudo apt install steam-installer
 ```
