@@ -369,3 +369,12 @@ ssh-add ~/.ssh/id_ed25519
 ```
 sudo apt install steam-installer
 ```
+# JAVA ☕
+```
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
+```
+# Node
+```
+sudo apt install nodejs
+```
+
