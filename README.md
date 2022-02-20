@@ -78,13 +78,21 @@ sudo apt install vlc
 # Other Required Softwares
 ```
 Chrome
+Choco + Node
+7-Zip
+Brave
+Notion
+Postman
+power toys
+telegram
+Trello
 FireFox
 VS Code
 Sublime
 ```
 # generate SSH Keys 🔐
 ```
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "saurav@example.com"
 ```
 ## add agent 🕵️
 ```
