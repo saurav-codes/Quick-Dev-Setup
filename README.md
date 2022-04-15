@@ -642,6 +642,10 @@ module.exports = {
 
 ```
 
+## WSL Ubuntu Network Error solution
+```
+https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues-on-wsl2#:~:text=Follow%20the%20steps%3A%201%20Right%20click%20on%20your,checkbox%20specifying%20IPv6%20connection%2C%20uncheck%20it.%20img.%20
+```
 
 
 
