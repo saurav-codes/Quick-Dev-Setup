@@ -646,7 +646,9 @@ module.exports = {
 ```
 https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues-on-wsl2#:~:text=Follow%20the%20steps%3A%201%20Right%20click%20on%20your,checkbox%20specifying%20IPv6%20connection%2C%20uncheck%20it.%20img.%20
 ```
-
+```
+https://support.purevpn.com/how-to-disable-ipv6-linuxubuntu
+```
 
 
 
