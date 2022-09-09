@@ -27,19 +27,33 @@ a simple config for sublime text 4
 # Prettier config
 ```
 {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "printWidth": 80,
-    "editor.formatOnSave": true,
-    "tabWidth": 2,
-    "arrowParens": "always",
-    "bracketSameLine": true,
-    "htmlWhitespaceSensitivity": "ignore",
-    "embeddedLanguageFormatting": "off",
-    "enableDebugLogs": true,
-    "endOfLine": "auto",
-    "semi": true,
-    "singleAttributePerLine": false,
-    "singleQuote": false
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "printWidth": 80,
+  "editor.formatOnSave": false,
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ],
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "embeddedLanguageFormatting": "off",
+  "enableDebugLogs": true,
+  "endOfLine": "auto",
+  "semi": true,
+  "singleAttributePerLine": false,
+  "singleQuote": false
 }
 ```
 
