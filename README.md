@@ -161,9 +161,17 @@ https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues
 https://support.purevpn.com/how-to-disable-ipv6-linuxubuntu
 ```
 
+## Neo Vim
+```
+# update vim first
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update -y
+sudo apt install --upgrade vim
 
-
-
+# now install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update -y
+sudo apt install --upgrade neovim
 
 
 
