@@ -173,5 +173,32 @@ sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update -y
 sudo apt install --upgrade neovim
 
+## VS Code
+```
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code Medium",
+    "editor.fontSize": 18,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 80,
+    "editor.formatOnSave": false,
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": true,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.embeddedLanguageFormatting": "off",
+    "prettier.enableDebugLogs": true,
+    "prettier.endOfLine": "auto",
+    "prettier.semi": true,
+    "prettier.singleAttributePerLine": false,
+    "prettier.singleQuote": false,
+    "window.titleBarStyle": "custom"
+}
+```
+
 
 
