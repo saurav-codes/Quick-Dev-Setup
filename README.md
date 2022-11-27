@@ -172,6 +172,7 @@ sudo apt install --upgrade vim
 sudo add-apt-repository ppa:neovim-ppa/stable
 sudo apt update -y
 sudo apt install --upgrade neovim
+```
 
 ## VS Code
 ```
