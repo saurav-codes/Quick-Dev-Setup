@@ -202,7 +202,8 @@ sudo apt install --upgrade neovim
 ```
 
 
-Sublime Anaconda settings - 
+### Sublime Anaconda settings - 
+
 ```
 /*
     Anaconda default settings
@@ -901,5 +902,5 @@ Sublime Anaconda settings -
 }
 
 // vim: set ft=javascript:
-
 ```
+
