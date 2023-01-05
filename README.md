@@ -197,8 +197,43 @@ sudo apt install --upgrade neovim
     "prettier.semi": true,
     "prettier.singleAttributePerLine": false,
     "prettier.singleQuote": false,
-    "window.titleBarStyle": "custom"
+    "window.titleBarStyle": "custom",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "80"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remote.SSH.remotePlatform": {
+        "206.189.140.170": "linux"
+    },
+    "git.autofetch": true,
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.startupEditor": "none",
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.html": "html",
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "window.zoomLevel": 2
 }
+
 ```
 
 
