@@ -1,31 +1,34 @@
-# 📒sublime-settings
+# Some Useful Commands & Configs
+
+## 📒sublime-settings
+
 a simple config for sublime text 4
 
-```
-
+```json
 {
-	"color_scheme": "Monokai.sublime-color-scheme",
-	"theme": "Default.sublime-theme",
-	"ignored_packages":
-	[
-		"Vintage",
-	],
-	"font_face": "Fira Code Medium",
-	"font_options":
-	[
-	    "gray_antialias",
-	    "subpixel_antialias"
-	],
-	"font_size": 15,
-	"line_padding_top": 1,
-	"auto_complete": true,
+ "color_scheme": "Monokai.sublime-color-scheme",
+ "theme": "Default.sublime-theme",
+ "ignored_packages":
+ [
+  "Vintage",
+ ],
+ "font_face": "Fira Code Medium",
+ "font_options":
+ [
+     "gray_antialias",
+     "subpixel_antialias"
+ ],
+ "font_size": 15,
+ "line_padding_top": 1,
+ "auto_complete": true,
 }
 
 
 ```
 
-# Prettier config
-```
+## Prettier config
+
+```json
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "printWidth": 80,
@@ -57,37 +60,51 @@ a simple config for sublime text 4
 }
 ```
 
-# Install Zsh Guide
-```
+## Install Zsh Guide
+
+```bash
 https://www.tecmint.com/install-zsh-in-ubuntu/
 ```
-# Oh-my-zsh theme 🎴
-```
+
+## Oh-my-zsh theme 🎴
+
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-# HomeBrew 
-```
+## HomeBrew
+
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-# CopyQ
-```
+
+## CopyQ
+
+```bash
 https://linuxhint.com/install-copyq-ubuntu/
 ```
-# Albert 🔍
-```
+
+## Albert 🔍
+
+```bash
 https://albertlauncher.github.io/installing/
 ```
-# OBS
-```
+
+## OBS
+
+```bash
 sudo apt install obs-studio
 ```
-# VLC 📽
-```
+
+## VLC 📽
+
+```bash
 sudo apt install vlc
 ```
-# Other Required Softwares
-```
+
+## Other Required Softwares
+
+```bash
 Chrome
 Choco + Node
 7-Zip
@@ -101,45 +118,61 @@ FireFox
 VS Code
 Sublime
 ```
-# generate SSH Keys 🔐
-```
+
+## generate SSH Keys 🔐
+
+```bash
 ssh-keygen -t ed25519 -C "saurav@example.com"
 ```
+
 ## add agent 🕵️
-```
+
+```bash
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
-# 🎮 Steam
-```
+
+## 🎮 Steam
+
+```bash
 sudo apt install steam-installer
 ```
-# JAVA ☕
-```
+
+## JAVA ☕
+
+```bash
 https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
 ```
-# Node
-```
+
+## Node
+
+```bash
 sudo apt install nodejs
 ```
-# Brightness config
-## Step up:
-```
+
+## Brightness config
+
+## Step up
+
+```bash
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
 ```
 
-## Step down:
-```
+## Step down
+
+```bash
 gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
 ```
 
 ## Hyper Terminal
 
-```
+```bash
 https://hyper.is/
 ```
+
 ## Install these required packages
-```
+
+```bash
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
 sudo bash /tmp/nodesource_setup.sh
 sudo apt install nodejs
@@ -149,20 +182,24 @@ hyper i hyper-mac-controls
 ```
 
 ## Make Ubuntu Dock Show only windows Indicators from Current WorkSpace
-```
+
+```bash
 gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
 ```
 
 ## WSL Ubuntu Network Error solution
-```
+
+```bash
 https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues-on-wsl2#:~:text=Follow%20the%20steps%3A%201%20Right%20click%20on%20your,checkbox%20specifying%20IPv6%20connection%2C%20uncheck%20it.%20img.%20
 ```
-```
+
+```bash
 https://support.purevpn.com/how-to-disable-ipv6-linuxubuntu
 ```
 
 ## Neo Vim
-```
+
+```bash
 # update vim first
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update -y
@@ -175,7 +212,8 @@ sudo apt install --upgrade neovim
 ```
 
 ## VS Code
-```
+
+```json
 {
     "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Fira Code Medium",
@@ -236,10 +274,9 @@ sudo apt install --upgrade neovim
 
 ```
 
+### Sublime Anaconda settings -
 
-### Sublime Anaconda settings - 
-
-```
+```json
 /*
     Anaconda default settings
 */
@@ -337,7 +374,7 @@ sudo apt install --upgrade neovim
         in a remote machine just use it's address:port as interpreter
         for example:
 
-        	"python_interpreter": "tcp://my_remote.machine.com:19360"
+         "python_interpreter": "tcp://my_remote.machine.com:19360"
     */
     "python_interpreter": "python",
 
@@ -723,9 +760,9 @@ sudo apt install --upgrade neovim
     "validate_imports": false,
 
     /*
-    	MyPy
+     MyPy
 
-    	Set the following option to true to enable MyPy checker.
+     Set the following option to true to enable MyPy checker.
     */
     "mypy": false,
 
@@ -735,16 +772,16 @@ sudo apt install --upgrade neovim
     "mypy_mypypath": "",
 
     /*
-    	MyPy Silent Imports
+     MyPy Silent Imports
 
-    	If true, mypy will not follow imports to .py files.
+     If true, mypy will not follow imports to .py files.
     */
     "mypy_silent_imports": false,
 
     /*
-    	MyPy Almost Silent
+     MyPy Almost Silent
 
-		Same as Silent Imports, but report the imports as errors.
+  Same as Silent Imports, but report the imports as errors.
     */
     "mypy_almost_silent": false,
 
@@ -756,34 +793,34 @@ sudo apt install --upgrade neovim
     "mypy_suppress_stub_warnings": true,
 
     /*
-    	MyPy py2
+     MyPy py2
 
-    	Use Python 2 mode.
+     Use Python 2 mode.
     */
     "mypy_py2": false,
 
     /*
-    	MyPy Disallow Untyped Calls
+     MyPy Disallow Untyped Calls
 
-    	Disallow calling functions without type annotations from
-    	functions with type annotations.
+     Disallow calling functions without type annotations from
+     functions with type annotations.
     */
     "mypy_disallow_untyped_calls": false,
 
     /*
-    	MyPy Disallow Untyped Defs
+     MyPy Disallow Untyped Defs
 
-    	Disallow defining functions without type annotations or
-    	with incomplete type annotations.
+     Disallow defining functions without type annotations or
+     with incomplete type annotations.
     */
     "mypy_disallow_untyped_defs": false,
 
-	/*
-		MyPy Check Untyped Defs
+ /*
+  MyPy Check Untyped Defs
 
-		Type check the interior of functions without type annotations.
-	*/
-	"mypy_check_untyped_defs": false,
+  Type check the interior of functions without type annotations.
+ */
+ "mypy_check_untyped_defs": false,
 
     /*
         MyPy Fast Parser
@@ -794,12 +831,12 @@ sudo apt install --upgrade neovim
     */
     "mypy_fast_parser": false,
 
-	/*
-		MyPy Custom Typing
+ /*
+  MyPy Custom Typing
 
-		Use a custom typing module. Uncomment to enable.
-	*/
-	// "mypy_custom_typing": "",
+  Use a custom typing module. Uncomment to enable.
+ */
+ // "mypy_custom_typing": "",
 
     /*
         Debug and development options
@@ -907,11 +944,11 @@ sudo apt install --upgrade neovim
     // "test_project_path": "./"
 
     /*
-    	Set this option to true if you get warnings about anaconda not
-    	being able to connect to your localhost on ST3 startup but it
-    	works normally after closing the error message.
+     Set this option to true if you get warnings about anaconda not
+     being able to connect to your localhost on ST3 startup but it
+     works normally after closing the error message.
 
-    	NOTE: Ignoring errors may be dangerous.
+     NOTE: Ignoring errors may be dangerous.
      */
 
      /* Parameters to include after test_command specific to testing scope */
@@ -920,7 +957,7 @@ sudo apt install --upgrade neovim
         "current_test": "",
         "project_tests": ""
     },
-	"swallow_startup_errors": false,
+ "swallow_startup_errors": false,
 
     /*
         If this is set to true, anaconda will unload plugins that
@@ -936,6 +973,4 @@ sudo apt install --upgrade neovim
     "anaconda_allow_project_environment_hooks": false
 }
 
-// vim: set ft=javascript:
 ```
-
