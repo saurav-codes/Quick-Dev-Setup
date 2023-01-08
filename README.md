@@ -22,261 +22,11 @@ a simple config for sublime text 4
  "line_padding_top": 1,
  "auto_complete": true,
 }
-
-
-```
-
-## Prettier config
-
-```json
-{
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "printWidth": 80,
-  "editor.formatOnSave": false,
-  "tabWidth": 4,
-  "overrides": [
-    {
-      "files": "*.html",
-      "options": {
-        "tabWidth": 2
-      }
-    },
-    {
-      "files": "*.js",
-      "options": {
-        "tabWidth": 2
-      }
-    }
-  ],
-  "arrowParens": "always",
-  "bracketSameLine": true,
-  "htmlWhitespaceSensitivity": "ignore",
-  "embeddedLanguageFormatting": "off",
-  "enableDebugLogs": true,
-  "endOfLine": "auto",
-  "semi": true,
-  "singleAttributePerLine": false,
-  "singleQuote": false
-}
-```
-
-## Install Zsh Guide
-
-```bash
-https://www.tecmint.com/install-zsh-in-ubuntu/
-```
-
-## Oh-my-zsh theme 🎴
-
-```bash
-sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-## HomeBrew
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-## CopyQ
-
-```bash
-https://linuxhint.com/install-copyq-ubuntu/
-```
-
-## Albert 🔍
-
-```bash
-https://albertlauncher.github.io/installing/
-```
-
-## OBS
-
-```bash
-sudo apt install obs-studio
-```
-
-## VLC 📽
-
-```bash
-sudo apt install vlc
-```
-
-## Other Required Softwares
-
-```bash
-Chrome
-Choco + Node
-7-Zip
-Brave
-Notion
-Postman
-power toys
-telegram
-Trello
-FireFox
-VS Code
-Sublime
-```
-
-## generate SSH Keys 🔐
-
-```bash
-ssh-keygen -t ed25519 -C "saurav@example.com"
-```
-
-## add agent 🕵️
-
-```bash
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_ed25519
-```
-
-## 🎮 Steam
-
-```bash
-sudo apt install steam-installer
-```
-
-## JAVA ☕
-
-```bash
-https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
-```
-
-## Node
-
-```bash
-sudo apt install nodejs
-```
-
-## Brightness config
-
-## Step up
-
-```bash
-gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
-```
-
-## Step down
-
-```bash
-gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
-```
-
-## Hyper Terminal
-
-```bash
-https://hyper.is/
-```
-
-## Install these required packages
-
-```bash
-curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
-sudo bash /tmp/nodesource_setup.sh
-sudo apt install nodejs
-npm install --global pure-prompt
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
-hyper i hyper-mac-controls
-```
-
-## Make Ubuntu Dock Show only windows Indicators from Current WorkSpace
-
-```bash
-gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
-```
-
-## WSL Ubuntu Network Error solution
-
-```bash
-https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues-on-wsl2#:~:text=Follow%20the%20steps%3A%201%20Right%20click%20on%20your,checkbox%20specifying%20IPv6%20connection%2C%20uncheck%20it.%20img.%20
-```
-
-```bash
-https://support.purevpn.com/how-to-disable-ipv6-linuxubuntu
-```
-
-## Neo Vim
-
-```bash
-# update vim first
-sudo add-apt-repository ppa:jonathonf/vim
-sudo apt update -y
-sudo apt install --upgrade vim
-
-# now install neovim
-sudo add-apt-repository ppa:neovim-ppa/stable
-sudo apt update -y
-sudo apt install --upgrade neovim
-```
-
-## VS Code
-
-```json
-{
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.fontFamily": "Fira Code Medium",
-    "editor.fontSize": 18,
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.mouseWheelZoom": true,
-    "editor.cursorBlinking": "expand",
-    "editor.cursorStyle": "block",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.printWidth": 80,
-    "editor.formatOnSave": false,
-    "prettier.tabWidth": 4,
-    "prettier.arrowParens": "always",
-    "prettier.bracketSameLine": true,
-    "prettier.htmlWhitespaceSensitivity": "ignore",
-    "prettier.embeddedLanguageFormatting": "off",
-    "prettier.enableDebugLogs": true,
-    "prettier.endOfLine": "auto",
-    "prettier.semi": true,
-    "prettier.singleAttributePerLine": false,
-    "prettier.singleQuote": false,
-    "window.titleBarStyle": "custom",
-    "editor.inlineSuggest.enabled": true,
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": true,
-        "plaintext": true,
-        "markdown": true
-    },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
-    },
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "80"
-    ],
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "remote.SSH.remotePlatform": {
-        "206.189.140.170": "linux"
-    },
-    "git.autofetch": true,
-    "material-icon-theme.folders.theme": "specific",
-    "workbench.startupEditor": "none",
-    "[django-html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "files.associations": {
-        "*.html": "html",
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-    },
-    "window.zoomLevel": 2
-}
-
 ```
 
 ### Sublime Anaconda settings -
 
-```json
+```text
 /*
     Anaconda default settings
 */
@@ -971,6 +721,254 @@ sudo apt install --upgrade neovim
         root of your working directory.
     */
     "anaconda_allow_project_environment_hooks": false
+}
+
+```
+
+## Prettier config
+
+```json
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "printWidth": 80,
+  "editor.formatOnSave": false,
+  "tabWidth": 4,
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "tabWidth": 2
+      }
+    }
+  ],
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "embeddedLanguageFormatting": "off",
+  "enableDebugLogs": true,
+  "endOfLine": "auto",
+  "semi": true,
+  "singleAttributePerLine": false,
+  "singleQuote": false
+}
+```
+
+## Install Zsh Guide
+
+```bash
+https://www.tecmint.com/install-zsh-in-ubuntu/
+```
+
+## Oh-my-zsh theme 🎴
+
+```bash
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## HomeBrew
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+## CopyQ
+
+```bash
+https://linuxhint.com/install-copyq-ubuntu/
+```
+
+## Albert 🔍
+
+```bash
+https://albertlauncher.github.io/installing/
+```
+
+## OBS
+
+```bash
+sudo apt install obs-studio
+```
+
+## VLC 📽
+
+```bash
+sudo apt install vlc
+```
+
+## Other Required Softwares
+
+```bash
+Chrome
+Choco + Node
+7-Zip
+Brave
+Notion
+Postman
+power toys
+telegram
+Trello
+FireFox
+VS Code
+Sublime
+```
+
+## generate SSH Keys 🔐
+
+```bash
+ssh-keygen -t ed25519 -C "saurav@example.com"
+```
+
+## add agent 🕵️
+
+```bash
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+## 🎮 Steam
+
+```bash
+sudo apt install steam-installer
+```
+
+## JAVA ☕
+
+```bash
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
+```
+
+## Node
+
+```bash
+sudo apt install nodejs
+```
+
+## Brightness config
+
+## Step up
+
+```bash
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepUp
+```
+
+## Step down
+
+```bash
+gdbus call --session --dest org.gnome.SettingsDaemon.Power --object-path /org/gnome/SettingsDaemon/Power --method org.gnome.SettingsDaemon.Power.Screen.StepDown
+```
+
+## Hyper Terminal
+
+```bash
+https://hyper.is/
+```
+
+## Install these required packages
+
+```bash
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+sudo bash /tmp/nodesource_setup.sh
+sudo apt install nodejs
+npm install --global pure-prompt
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+hyper i hyper-mac-controls
+```
+
+## Make Ubuntu Dock Show only windows Indicators from Current WorkSpace
+
+```bash
+gsettings set org.gnome.shell.extensions.dash-to-dock isolate-workspaces true
+```
+
+## WSL Ubuntu Network Error solution
+
+```bash
+https://askubuntu.com/questions/1248825/how-can-i-fix-internet-connection-issues-on-wsl2#:~:text=Follow%20the%20steps%3A%201%20Right%20click%20on%20your,checkbox%20specifying%20IPv6%20connection%2C%20uncheck%20it.%20img.%20
+```
+
+```bash
+https://support.purevpn.com/how-to-disable-ipv6-linuxubuntu
+```
+
+## Neo Vim
+
+```bash
+# update vim first
+sudo add-apt-repository ppa:jonathonf/vim
+sudo apt update -y
+sudo apt install --upgrade vim
+
+# now install neovim
+sudo add-apt-repository ppa:neovim-ppa/stable
+sudo apt update -y
+sudo apt install --upgrade neovim
+```
+
+## VS Code
+
+```json
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Fira Code Medium",
+    "editor.fontSize": 18,
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 80,
+    "editor.formatOnSave": false,
+    "prettier.tabWidth": 4,
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": true,
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.embeddedLanguageFormatting": "off",
+    "prettier.enableDebugLogs": true,
+    "prettier.endOfLine": "auto",
+    "prettier.semi": true,
+    "prettier.singleAttributePerLine": false,
+    "prettier.singleQuote": false,
+    "window.titleBarStyle": "custom",
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true
+    },
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "80"
+    ],
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "remote.SSH.remotePlatform": {
+        "206.189.140.170": "linux"
+    },
+    "git.autofetch": true,
+    "material-icon-theme.folders.theme": "specific",
+    "workbench.startupEditor": "none",
+    "[django-html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.html": "html",
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "window.zoomLevel": 2
 }
 
 ```
