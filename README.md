@@ -974,3 +974,19 @@ sudo apt install --upgrade neovim
 }
 
 ```
+
+## GitHub - config for multi User 😿
+
+```bash
+# Personal repositories
+Host github.com-srv
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_personal
+
+# Company repositories - Keeping default for company repos
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+```
