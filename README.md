@@ -914,15 +914,16 @@ sudo apt install --upgrade neovim
 
 ```json
 {
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vscode-icons",
     "editor.fontFamily": "Fira Code Medium",
+    "terminal.integrated.fontFamily": "FiraCode NF",
     "editor.fontSize": 18,
     "editor.cursorSmoothCaretAnimation": true,
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "block",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.printWidth": 80,
+    "prettier.printWidth": 120,
     "editor.formatOnSave": false,
     "prettier.tabWidth": 4,
     "prettier.arrowParens": "always",
@@ -968,8 +969,10 @@ sudo apt install --upgrade neovim
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
-    "window.zoomLevel": 2
+    "window.zoomLevel": 4,
+    "workbench.colorTheme": "Ayu Dark Bordered"
 }
+
 
 ```
 
