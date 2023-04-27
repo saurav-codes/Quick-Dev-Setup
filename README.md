@@ -1034,16 +1034,14 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 
 ## GitHub - config for multi User 😿
 
-```bash
-# Personal repositories
-Host github.com-srv
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_rsa_personal
+```bash                                      
+Host selftaughtdev-me.github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/personal
 
-# Company repositories - Keeping default for company repos
-Host github.com
-  HostName github.com
-  User git
-  IdentityFile ~/.ssh/id_rsa
+Host saurav-valardigital.github.com
+HostName github.com
+PreferredAuthentications publickey
+IdentityFile ~/.ssh/id_rsa
 ```
