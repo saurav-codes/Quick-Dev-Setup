@@ -281,7 +281,7 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.printWidth": 120,
     "editor.formatOnSave": false,
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 2,
     "prettier.arrowParens": "always",
     "prettier.bracketSameLine": true,
     "prettier.htmlWhitespaceSensitivity": "ignore",
@@ -300,15 +300,11 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
         "markdown": true
     },
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.python",
     },
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "120"
-    ],
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "git.autofetch": true,
     "files.associations": {
@@ -317,8 +313,15 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
     "[markdown]": {
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
-    "window.zoomLevel": 4,
-    "workbench.iconTheme": "material-icon-theme"
+    "workbench.iconTheme": "material-icon-theme",
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "python.analysis.autoFormatStrings": true,
+    "editor.accessibilitySupport": "off"
 }
 
 ```
