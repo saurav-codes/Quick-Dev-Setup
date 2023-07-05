@@ -345,3 +345,8 @@ IdentityFile ~/.ssh/id_valar
 ```bash
 gsettings set org.gnome.mutter center-new-windows true
 ```
+
+## setup neovim ( Lazy )
+```bash
+mv nvim ~/.config/
+```
