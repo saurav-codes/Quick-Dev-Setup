@@ -268,17 +268,20 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
 ```
 
 ## VS Code
-
-```json
+```
 {
-    "editor.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontFamily": "JetBrains Mono NL",
+    "editor.fontFamily": "Comic Code Ligatures",
+    // "editor.fontFamily": "JetBrains Mono",
+    "window.commandCenter": true,
     "editor.fontSize": 18,
+    "editor.lineHeight": 28,
+    "editor.minimap.enabled": true,
+    "editor.smoothScrolling": true,
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "expand",
     "editor.cursorStyle": "block",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.printWidth": 120,
     "editor.formatOnSave": false,
     "prettier.tabWidth": 2,
@@ -299,10 +302,7 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
         "plaintext": true,
         "markdown": true
     },
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.python",
-    },
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "none",
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -314,15 +314,41 @@ inoremap <expr> <Tab> pumvisible() ? coc#_select_confirm() : "<Tab>"
         "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
     },
     "workbench.iconTheme": "material-icon-theme",
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
+    "python.analysis.autoFormatStrings": true,
+    "editor.accessibilitySupport": "off",
+    "workbench.colorTheme": "Serendipity Midnight",
+    "workbench.editor.showTabs": false,
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.activityBar.visible": false,
+    "ruff.args": [
+        "--line-length",
+        "120",
+    ],
+    "python.linting.ignorePatterns": [
+        "**/site-packages/**/*.py",
+        ".vscode/*.py",
+        "*migration*"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
     },
-    "[css]": {
+    "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "python.analysis.autoFormatStrings": true,
-    "editor.accessibilitySupport": "off"
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
 }
+```
 
 ```
 
