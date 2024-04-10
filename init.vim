@@ -27,6 +27,8 @@ inoremap jj <Esc>
 
 call plug#begin('~/.config/nvim/plugged')
 
+Plug 'christoomey/vim-tmux-navigator'
+
 " LSP
 Plug 'neovim/nvim-lspconfig'
 " Autocomplete
@@ -34,7 +36,9 @@ Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'raimon49/requirements.txt.vim'
 Plug 'Mofiqul/vscode.nvim'
+Plug 'github/copilot.vim'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
 Plug 'hrsh7th/cmp-cmdline'
@@ -43,11 +47,20 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'mattn/emmet-vim'
+Plug 'chriskempson/base16-vim'
+Plug 'numToStr/Comment.nvim'
 Plug 'kyazdani42/nvim-web-devicons'  " optional, for file icons
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'p00f/nvim-ts-rainbow'
+
 Plug 'akinsho/bufferline.nvim', {'do': ':UpdateRemotePlugins'}
 Plug 'kyazdani42/nvim-web-devicons' " for file icons
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+Plug 'lewis6991/gitsigns.nvim'
+Plug 'wellle/context.vim'
+Plug 'folke/tokyonight.nvim'
+Plug 'catppuccino/nvim'
 
 " Snippets
 Plug 'L3MON4D3/LuaSnip'
@@ -103,7 +116,10 @@ require('telescope').setup {
 }
 require('telescope').load_extension('fzf')
 EOF
+
 nnoremap <leader>f :Telescope find_files hidden=true<CR>
+nnoremap <leader>fw :Telescope live_grep<CR>
+
 
 " Remember last position in file
 autocmd BufReadPost *
@@ -206,4 +222,67 @@ EOF
 
 nnoremap gl <cmd>lua vim.diagnostic.open_float()<CR>
 nnoremap gk :lua vim.lsp.buf.hover()<CR>
+
+
+lua << EOF
+require('Comment').setup()
+require('gitsigns').setup()
+require'nvim-treesitter.configs'.setup {
+  -- A list of parser names, or "all" (the five listed parsers should always be installed)
+  ensure_installed = { "lua", "vim", "vimdoc", "query", "html", "python", "rust", "json", "javascript", "css" },
+
+  rainbow = {
+    enable = true,
+    -- other options
+  },
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
+
+  -- Automatically install missing parsers when entering buffer
+  -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
+  auto_install = true,
+
+  -- List of parsers to ignore installing (or "all")
+  ignore_install = { },
+
+  ---- If you need to change the installation directory of the parsers (see -> Advanced Setup)
+  -- parser_install_dir = "/some/path/to/store/parsers", -- Remember to run vim.opt.runtimepath:append("/some/path/to/store/parsers")!
+
+  highlight = {
+    enable = true,
+
+    -- NOTE: these are the names of the parsers and not the filetype. (for example if you want to
+    -- disable highlighting for the `tex` filetype, you need to include `latex` in this list as this is
+    -- the name of the parser)
+    -- list of language that will be disabled
+    -- disable = { "c", "rust" },
+    -- Or use a function for more flexibility, e.g. to disable slow treesitter highlight for large files
+    disable = function(lang, buf)
+        local max_filesize = 100 * 1024 -- 100 KB
+        local ok, stats = pcall(vim.loop.fs_stat, vim.api.nvim_buf_get_name(buf))
+        if ok and stats and stats.size > max_filesize then
+            return true
+        end
+    end,
+
+    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
+    -- Using this option may slow down your editor, and you may see some duplicate highlights.
+    -- Instead of true it can also be a list of languages
+    additional_vim_regex_highlighting = false,
+  },
+}
+
+
+
+EOF
+
+let g:context_add_mappings = 0
+
+function! GrepWordUnderCursor()
+    let word = expand('<cword>')
+    execute 'Telescope live_grep default_text=' . word
+endfunction
+
+nnoremap <leader>g :call GrepWordUnderCursor()<CR>
 
